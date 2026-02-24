@@ -74,14 +74,41 @@
         </section>
       </main>
     
-      <footer>
-        Hello World!
       </footer>
+        Hello World!
+        <div class="chat-wrapper">
+          <button id="chat-toggle" class="chat-btn">💬</button>
+          
+          <div id="chat-container" class="chat-container">
+            <div class="chat-header">
+              <span>Lola's AI Helper</span>
+              <button id="chat-close" class="chat-close">×</button>
+            </div>
+            
+            <div id="chat-messages" class="chat-messages">
+              <div class="message bot">
+                Hi! I'm Lola's AI assistant. Ask me about her projects, skills, or experience! 👋
+              </div>
+            </div>
+            
+            <div class="chat-input-wrapper">
+              <input 
+                id="chat-input" 
+                type="text" 
+                placeholder="Type your message..." 
+                autocomplete="off"
+              />
+              <button id="chat-send">Send</button>
+            </div>
+          </div>
+        </div>
+
         <script src="script.js"></script>
     </body>
 </html>
 
         
+
 
 
 
