@@ -5,7 +5,7 @@ Personal portfolio website built using HTML, CSS, and JavaScript.
 Developed to practise front-end fundamentals, responsive design, and version control while showcasing ongoing software engineering projects.
 
 ## Overview
-This project serves as a practical environment to apply core web development principles, structure clean semantic markup, implement styling patterns, and introduce interactive behaviour using JavaScript.
+This projec, serves as a practical environment to apply core web development principles, structure clean semantic markup, implement styling patterns, and introduce interactive behaviour using JavaScript.
 
 The site will evolve as I continue developing new projects and expanding my technical skill set.
 
