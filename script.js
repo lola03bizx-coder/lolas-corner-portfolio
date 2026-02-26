@@ -28,13 +28,24 @@ const responses = {
   'skills': "Right now I'm mastering HTML, CSS, and JavaScript. Next up: React and more advanced frontend development! 💻",
   'experience': "I'm an aspiring software engineer preparing for Level 4 apprenticeships. I love learning by building real projects like this one. 🎯",
   'contact': "You can reach Lola via email or LinkedIn. She's always open to chatting about software engineering opportunities! 📧",
-  'fintech': "Lola's super interested in fintech! She's applying to companies like Finova and loves how technology transforms finance. 💰",
   'html': "This entire site is pure HTML, CSS, and JavaScript - no frameworks! Perfect for learning the fundamentals. ✨",
   'default': "Great question! Ask me about Lola's projects, skills, experience, or contact info. I'm here to help! 😊"
 };
 
 function getResponse(message) {
   const lower = message.toLowerCase();
+
+  if (lower.includes("project")) {
+    return responses.project;
+  }
+  if (lower.includes("skills")) 
+    return responses.skills;
+  if (lower.includes("experience"))
+    return responses.experience;
+  if (lower.includes("contact")
+      return response.contact;
+  if (lower.includes("html"))
+    return response.html;
   
   for (let key in responses) {
     if (lower.includes(key)) {
