@@ -312,3 +312,24 @@ footer {
   background: #1d4ed8;
 }
 
+.chat-header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chat-clear {
+  background: rgab (255, 255, 255, 0.2);
+  border: 1px solid rgab(255, 255, 255, 0.6);
+  colour: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.chat-clear: hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+
