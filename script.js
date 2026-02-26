@@ -1,16 +1,3 @@
-// Smooth scroll for in-page navigation links
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener("click", event => {
-    const targetId = link.getAttribute("href").slice(1);
-    const target = document.getElementById(targetId);
-    if (!target) return;
-
-    event.preventDefault();
-    target.scrollIntoView({ behavior: "smooth" });
-  });
-});
-
-
 // 1. Smooth scrolling (keep this)
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", event => {
@@ -43,9 +30,9 @@ function getResponse(message) {
   if (lower.includes("experience"))
     return responses.experience;
   if (lower.includes("contact")
-      return response.contact;
+      return responses.contact;
   if (lower.includes("html"))
-    return response.html;
+    return responses.html;
   
   for (let key in responses) {
     if (lower.includes(key)) {
@@ -95,7 +82,7 @@ function sendMessage() {
 
 
 function resetChat() {
-  const mnessages = document.getElementById('chat-messages');
+  const messages = document.getElementById('chat-messages');
   messages.innerHTML = '
     <div class= "message bot">
     Hi!  I'm Lola's AI assistant. Ask me about her projects, skills, or experience!👋
@@ -108,13 +95,13 @@ document.getElementById('chat-clear').addEventListener('click', () => {
   if (ok) resetChat();
 });
 
-document.getElementById('close-chart').addEventListener('click',() => {
+document.getElementById('chat-close').addEventListener('click',() => {
   const ok = confirm ("Close chat and clear messages?");
   if (ok) {
     resetChat();
-    document.getElementById('chat-container').classList.remnove('open');
+    document.getElementById('chat-container').classList.remove('open');
   } else {
-    document.getElementById('chat-container').clkassList.remove('open'0:
+    document.getElementById('chat-container').classList.remove('open');
   }
 });
 
