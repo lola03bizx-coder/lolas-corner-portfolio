@@ -93,3 +93,30 @@ function sendMessage() {
   }, 800);
 }
 
+
+function resetChat() {
+  const mnessages = document.getElementById('chat-messages');
+  messages.innerHTML = '
+    <div class= "message bot">
+    Hi!  I'm Lola's AI assistant. Ask me about her projects, skills, or experience!👋
+    </div>
+  ';
+}
+
+document.getElementById('chat-clear').addEventListener('click', () => {
+  const ok = confirm("clear conversation with Lola's AI helper?");
+  if (ok) resetChat();
+});
+
+document.getElementById('close-chart').addEventListener('click',() => {
+  const ok = confirm ("Close chat and clear messages?");
+  if (ok) {
+    resetChat();
+    document.getElementById('chat-container').classList.remnove('open');
+  } else {
+    document.getElementById('chat-container').clkassList.remove('open'0:
+  }
+});
+
+resetChat();
+
