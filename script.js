@@ -11,7 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 // 2. AI Chatbot
 const responses = {
-  'projects': "I've built this portfolio website to practice HTML, CSS, and JavaScript! It's my first real project and I'm adding features like this chatbot. 🚀",
+  'project': "I've built this portfolio website to practice HTML, CSS, and JavaScript! It's my first real project and I'm adding features like this chatbot. 🚀",
   'skills': "Right now I'm mastering HTML, CSS, and JavaScript. Next up: React and more advanced frontend development! 💻",
   'experience': "I'm an aspiring software engineer preparing for Level 4 apprenticeships. I love learning by building real projects like this one. 🎯",
   'contact': "You can reach Lola via email or LinkedIn. She's always open to chatting about software engineering opportunities! 📧",
