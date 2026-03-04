@@ -25,14 +25,18 @@ function getResponse(message) {
   if (lower.includes("project")) {
     return responses.project;
   }
-  if (lower.includes("skills")) 
+  if (lower.includes("skills")) {
     return responses.skills;
-  if (lower.includes("experience"))
+  }
+  if (lower.includes("experience")){
     return responses.experience;
-  if (lower.includes("contact")
+  }
+  if (lower.includes("contact")){
       return responses.contact;
-  if (lower.includes("html"))
+  }
+  if (lower.includes("html")){
     return responses.html;
+  }
   
   for (let key in responses) {
     if (lower.includes(key)) {
@@ -83,11 +87,11 @@ function sendMessage() {
 
 function resetChat() {
   const messages = document.getElementById('chat-messages');
-  messages.innerHTML = '
-    <div class= "message bot">
-    Hi!  I'm Lola's AI assistant. Ask me about her projects, skills, or experience!👋
-    </div>
-  ';
+  messages.innerHTML = `
+  <div class="message bot">
+    Hi! I'm Lola's AI assistant. Ask me about her projects, skills, or experience! 👋
+  </div>
+`;
 }
 
 document.getElementById('chat-clear').addEventListener('click', () => {
