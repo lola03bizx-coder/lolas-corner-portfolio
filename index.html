@@ -21,190 +21,157 @@
     </aside>
 
     <main class="content">
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          I’m Lola, an aspiring software engineer at the start of my journey.
-          I’m currently focused on web fundamentals like HTML, CSS and JavaScript.
-          This portfolio is a space where I can experiment, make mistakes, and improve.
-        </p>
-        <p>
-          I didn’t start in tech - I started in Biomedical Science, where precision and evidence matter.
-          Over time, I became curious about how data drives decisions, which led me into Excel, then Python,
-          and eventually software development.
-        </p>
-        <p>
-          What I enjoy most is the problem-solving loop: build something, break it, debug it, and improve it.
-          That cycle is how I’ve learned to think more clearly and write better code.
-        </p>
-      </section>
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I’m Lola, an aspiring software engineer at the start of my journey.
+      I’m currently focused on web fundamentals like HTML, CSS and JavaScript.
+      This portfolio is a space where I can experiment, make mistakes, and improve.
+    </p>
+    <p>
+      I didn’t start in tech - I started in Biomedical Science, where precision and evidence matter.
+      Over time, I became curious about how data drives decisions, which led me into Excel, then Python,
+      and eventually software development.
+    </p>
+    <p>
+      What I enjoy most is the problem-solving loop: build something, break it, debug it, and improve it.
+      That cycle is how I’ve learned to think more clearly and write better code.
+    </p>
+  </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <p class="section-lead">
-          A few things I’ve built while learning to write cleaner code, debug faster, and ship improvements.
-        </p>
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="section-lead">
+      A few things I’ve built while learning to write cleaner code, debug faster, and ship improvements.
+    </p>
 
-        <div class="projects-header">
-          <button class="scroll-btn" onclick="scrollProjects(-1)" aria-label="Scroll left">←</button>
-          <button class="scroll-btn" onclick="scrollProjects(1)" aria-label="Scroll right">→</button>
-        </div>
-
-        <div class="projects-scroll" id="projects-scroll">
-          <article class="project-card">
-            <h3>Python Data Processing System</h3>
-            <p>
-              Modular Python pipeline to clean, validate, and transform structured datasets (1000+ entries),
-              with error handling and edge-case checks.
-            </p>
-            <ul class="project-tags">
-              <li>Python</li>
-              <li>Pandas</li>
-              <li>Validation</li>
-              <li>Debugging</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" aria-label="View repository">Repo</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <h3>Portfolio Website + Local AI Agent</h3>
-            <p>
-              Responsive portfolio with a rule-based JavaScript "AI" assistant. I independently learned DOM event handling,
-              fixed UI activation bugs, and improved input handling.
-            </p>
-            <ul class="project-tags">
-              <li>JavaScript</li>
-              <li>HTML/CSS</li>
-              <li>DOM</li>
-              <li>GitHub Pages</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" aria-label="View repository">Repo</a>
-              <a href="#" aria-label="View live demo">Live</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <h3>NEFA Graphical Visualisation</h3>
-            <p>
-              Visualised the relationship between NEFA concentration and absorbance using Python, focusing on clear plots
-              and readable outputs for non-technical audiences.
-            </p>
-            <ul class="project-tags">
-              <li>Python</li>
-              <li>Matplotlib</li>
-              <li>Data Cleaning</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" aria-label="View repository">Repo</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <h3>SPOT Dissertation Project</h3>
-            <p>
-              Research-focused project exploring how structured data and model evaluation can support better decisions,
-              with emphasis on validation, documenting assumptions, and communicating results clearly.
-            </p>
-            <ul class="project-tags">
-              <li>Python</li>
-              <li>SQL</li>
-              <li>Evaluation</li>
-              <li>Reporting</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" aria-label="Read summary">Summary</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <h3>Data Analytics and Visualisation Simulation</h3>
-            <p>
-              End-to-end simulation covering data extraction, cleaning, transformation, and reporting through dashboards
-              and structured summaries.
-            </p>
-            <ul class="project-tags">
-              <li>Excel</li>
-              <li>Power BI</li>
-              <li>Reporting</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" aria-label="View summary">Summary</a>
-            </div>
-          </article>
-        </div>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p class="section-lead">
-          Want to connect about an opportunity, project, or collaboration? Send me a message below.
-        </p>
-
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <div class="form-row">
-            <label>
-              Name
-              <input type="text" name="name" required />
-            </label>
-
-            <label>
-              Email
-              <input type="email" name="email" required />
-            </label>
-          </div>
-
-          <label>
-            Purpose of enquiry
-            <select name="purpose" required>
-              <option value="" disabled selected>Select one</option>
-              <option value="apprenticeship">Apprenticeship opportunity</option>
-              <option value="collaboration">Project collaboration</option>
-              <option value="general">General question</option>
-            </select>
-          </label>
-
-          <label>
-            Message
-            <textarea name="message" rows="6" required placeholder="Write your message here..."></textarea>
-          </label>
-
-          <button type="submit" class="btn-primary">Send message</button>
-        </form>
-      </section>
-    </main>
-  </div>
-
-  <footer>Hello World!</footer>
-
-  <div class="chat-wrapper">
-    <button id="chat-toggle" class="chat-btn">💬</button>
-
-    <div id="chat-container" class="chat-container">
-      <div class="chat-header">
-        <span>Lola's AI Helper</span>
-        <button id="chat-clear" class="chat-clear">clear</button>
-        <button id="chat-close" class="chat-close">×</button>
-      </div>
-
-      <div id="chat-messages" class="chat-messages">
-        <div class="message bot">
-          Hi! I'm Lola's AI assistant. Ask me about her projects, skills, or experience! 👋
-        </div>
-      </div>
-
-      <div class="chat-input-wrapper">
-        <input
-          id="chat-input"
-          type="text"
-          placeholder="Type your message..."
-          autocomplete="off"
-        />
-        <button id="chat-send">Send</button>
-      </div>
+    <div class="projects-header">
+      <button class="scroll-btn" onclick="scrollProjects(-1)" aria-label="Scroll left">←</button>
+      <button class="scroll-btn" onclick="scrollProjects(1)" aria-label="Scroll right">→</button>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <div class="projects-scroll" id="projects-scroll">
+      <article class="project-card">
+        <h3>Python Data Processing System</h3>
+        <p>
+          Modular Python pipeline to clean, validate, and transform structured datasets (1000+ entries),
+          with error handling and edge-case checks.
+        </p>
+        <ul class="project-tags">
+          <li>Python</li>
+          <li>Pandas</li>
+          <li>Validation</li>
+          <li>Debugging</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Repo</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Portfolio Website + Local AI Agent</h3>
+        <p>
+          Responsive portfolio with a rule-based JavaScript assistant. I independently learned DOM event handling,
+          fixed UI activation bugs, and improved input handling.
+        </p>
+        <ul class="project-tags">
+          <li>JavaScript</li>
+          <li>HTML/CSS</li>
+          <li>DOM</li>
+          <li>GitHub Pages</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Repo</a>
+          <a href="#">Live</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>NEFA Graphical Visualisation</h3>
+        <p>
+          Visualised the relationship between NEFA concentration and absorbance using Python, focusing on clear plots
+          and readable outputs for non-technical audiences.
+        </p>
+        <ul class="project-tags">
+          <li>Python</li>
+          <li>Matplotlib</li>
+          <li>Data Cleaning</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Repo</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>SPOT Dissertation Project</h3>
+        <p>
+          Research-focused project exploring how structured data and model evaluation can support better decisions.
+        </p>
+        <ul class="project-tags">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Evaluation</li>
+          <li>Reporting</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Summary</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Data Analytics and Visualisation Simulation</h3>
+        <p>
+          End-to-end simulation covering extraction, cleaning, transformation, and reporting through dashboards
+          and structured summaries.
+        </p>
+        <ul class="project-tags">
+          <li>Excel</li>
+          <li>Power BI</li>
+          <li>Reporting</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Summary</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="section-lead">
+      Want to connect about an opportunity, project, or collaboration? Send me a message below.
+    </p>
+
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-row">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+      </div>
+
+      <label>
+        Purpose of enquiry
+        <select name="purpose" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="apprenticeship">Apprenticeship opportunity</option>
+          <option value="collaboration">Project collaboration</option>
+          <option value="general">General question</option>
+        </select>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="6" required placeholder="Write your message here..."></textarea>
+      </label>
+
+      <button type="submit" class="btn-primary">Send message</button>
+    </form>
+  </section>
+</main>
+
