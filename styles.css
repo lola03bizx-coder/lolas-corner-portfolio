@@ -299,7 +299,6 @@ textarea:focus {
   background: #1d4ed8;
 }
 
-/* Footer */
 footer {
   margin: 3rem 0 2rem;
   text-align: center;
@@ -307,7 +306,6 @@ footer {
   font-size: 0.85rem;
 }
 
-/* Chatbot */
 .chat-wrapper {
   position: fixed;
   bottom: 2rem;
@@ -473,5 +471,33 @@ footer {
 
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;         
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .hero-inner {
+    flex-direction: column;   
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-tagline {
+    max-width: 28ch;
+  }
+
+  .hero-nav {
+    justify-content: center;
   }
 }
