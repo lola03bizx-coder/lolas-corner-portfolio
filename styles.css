@@ -154,14 +154,14 @@ section p {
 }
 
 .reveal-section {
-  opacity: 1;
-  transform: none !important;
-  transition: none;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .reveal-section.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 /* Projects */
@@ -318,7 +318,7 @@ textarea:focus {
   background: #1d4ed8;
 }
 
-footer {
+.footer {
   margin: 3rem 0 2rem;
   text-align: center;
   color: #6b7280;
