@@ -134,20 +134,31 @@ if (chatInput) {
 resetChat();
 
 const revealSections = document.querySelectorAll(".reveal-section");
+console.log("Found sections:", revealSections.length);
+
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observerCallback = (entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      console.log("Animating section:", entry.target.id);  // Debug log
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    }
+  });
+};
 
 if ("IntersectionObserver" in window) {
-  const obserevr = new InetrsectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    };
-    {threshold:0.1}
-  );
-
-  revealSections.forEach((section) => observer.observe(section));
+  const obserevr = new InetrsectionObserver(observeCallback, observeOptions);
+  revealSections.forEach(section => {
+    observer.observe(section);
+  });
+  console.log("Observer started on", revealSections.length, "sections");
+} else {
+  console.log("No IntersectionObserver support - showing all sections")
+    revealSections.forEach(section => section.classList.add("is-visible"));
 }
   
