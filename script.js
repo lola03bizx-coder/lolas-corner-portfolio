@@ -134,22 +134,19 @@ if (chatInput) {
 resetChat();
 
 const revealSections = document.querySelectorAll(".reveal-section");
-console.log("Found sections:", revealSections.length);
 
-revealSections.forEach((section, index) => {
-  setTimeout(() => {
-    section.classList.add("is-visible");
-    console.log("FORCED:", section.id || 'section');
-  }, index * 200); // 
-});
+const observerOptions = {
+  threshold: 0.1,           // Trigger when 10% visible
+  rootMargin: '0px 0px -50px 0px'  // Trigger 50px early
+};
 
-window.addEventListener('scroll', () => {
-  revealSections.forEach(section => {
-    const rect = section.getBoundingClientRect();
-    if (rect.top < window.innerHeight * 0.8) {
-      section.classList.add("is-visible");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);  // One-time animation
     }
   });
-});
+}, observerOptions);
 
-console.log("FORCE animations applied + scroll backup");
+revealSections.forEach(section => observer.observe(section));
