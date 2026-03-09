@@ -13,6 +13,7 @@ body {
   color: #111827;
   min-height: 100vh;
 }
+
 .hero {
   display: flex;
   align-items: center;
@@ -77,6 +78,12 @@ body {
   position: sticky;
   top: 5rem;
   height: fit-content;
+}
+
+.sidebar h2 {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
 }
 
 .profile-photo {
